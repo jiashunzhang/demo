@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class AddUser extends JDialog {
+
+    private static final long serialVersionUID = -5116968700267175491L;
+
     private Font kaiFont = new Font("AR PL UKai CN", Font.PLAIN, 20);
 
     private JLabel l_name = new JLabel("用户名:");
@@ -35,6 +38,7 @@ public class AddUser extends JDialog {
         this.add(cancel);
 
         l_name.setBounds(60, 20, 80, 40);
+        l_name.setFont(kaiFont);
         t_name.setBounds(150, 20, 80, 40);
 
 
