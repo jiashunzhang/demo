@@ -93,7 +93,7 @@ public class AddUser extends JDialog {
                     // JOptionPane.showMessageDialog(Login.this, "驱动加载成功");
                     con = DriverManager.getConnection("jdbc:mysql://localhost:3306/demo?useSSL=false&serverTimezone=UTC","sa","nicai");
                     //JOptionPane.showMessageDialog(Login.this, "数据库连接成功");
-                    statement = con.prepareStatement("insert into users values(null, ?,?)");
+                    statement = con.prepareStatement("insert into users values(null, ?,?, 2)");
                     statement.setString(1, uname);
                     statement.setString(2, upass);
                     int result = statement.executeUpdate();
